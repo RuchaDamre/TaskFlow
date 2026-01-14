@@ -7,9 +7,9 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 
 type Props = {
-    onEditBoard: () => void,
-    boardTitle: string,
-    onFilterClick: () => void,
+    onEditBoard?: () => void,
+    boardTitle?: string,
+    onFilterClick?: () => void,
     filterCount?: number,
 }
 
