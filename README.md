@@ -1,36 +1,94 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# TaskFlow
 
-## Getting Started
+A full-stack Trello clone designed for users to efficiently manage tasks and projects through a clean, responsive, and interactive Kanban-style interface.
 
-First, run the development server:
+# ✨ Key Features
 
+- Secure user authentication with **Clerk**  
+- Create, edit, and delete **boards, columns, and tasks**  
+- Drag-and-drop task management  
+- Filter tasks based on custom criteria  
+- Responsive, mobile-first UI built with **Tailwind CSS**  
+- Fully integrated with **Supabase** backend for persistent data  
+
+# 🛠️ Tech Stack
+
+- **Frontend:** React, Next.js, TypeScript, Tailwind CSS  
+- **Authentication:** Clerk  
+- **Database & Backend:** Supabase (PostgreSQL)  
+
+# 🚀 Getting Started
+
+## Prerequisites
+
+- Node.js (v18+ recommended)  
+- Supabase account  
+- Clerk account  
+
+## Installation
+
+### Clone the repository
 ```bash
+git clone https://github.com/your-username/taskflow.git
+cd taskflow
+Install dependencies
+bash
+Copy code
+npm install
+# or
+yarn
+Setup environment variables
+Create a .env.local file:
+
+env
+Copy code
+# Clerk
+NEXT_PUBLIC_CLERK_FRONTEND_API=pk_test_your_publishable_key
+CLERK_API_KEY=sk_test_your_secret_key
+
+# Supabase
+NEXT_PUBLIC_SUPABASE_URL=https://your-project.supabase.co
+NEXT_PUBLIC_SUPABASE_ANON_KEY=your-anon-key
+Start the development server
+bash
+Copy code
 npm run dev
 # or
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Open http://localhost:3000 to view the app.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+🔐 Authentication
+Users can securely sign up and sign in using Clerk authentication.
+All authentication flows are handled automatically.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+📌 Project Highlights
+Modular React component architecture for scalability
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Clean UI built with Tailwind CSS
 
-## Learn More
+Real-world task management use case similar to Trello
 
-To learn more about Next.js, take a look at the following resources:
+Integration with Supabase for real-time data persistence
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Fully responsive and mobile-friendly
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+🌐 Deployment
+Frontend: Vercel (free hosting for Next.js)
 
-## Deploy on Vercel
+Backend/Database: Supabase (free tier for Postgres database)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Authentication: Clerk (free tier for user management)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+👩‍💻 Author
+Rucha Damre
+Frontend Engineer | React Developer
+
+📧 Email: ruchadamre2000@gmail.com
+🔗 LinkedIn: https://www.linkedin.com/in/rucha-damre-23392119a/
+🐙 GitHub: https://github.com/RuchaDamre
+
+
+
+
+
+
